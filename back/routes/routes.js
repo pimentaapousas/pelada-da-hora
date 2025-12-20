@@ -7,6 +7,7 @@ const AuthController = require("../controllers/AuthController");
 
 // Definindo a rota POST /auth/register
 router.post("/auth/register", AuthController.register);
+router.post("/auth/login", AuthController.login);
 
 // Rota de teste simples
 router.get("/teste", (req, res) => {
@@ -14,4 +15,3 @@ router.get("/teste", (req, res) => {
 });
 
 module.exports = router;
-  
